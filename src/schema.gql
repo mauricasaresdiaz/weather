@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type WeatherOutput {
+  city: String!
+  coordinates: Coordinates!
+  temperature: Float!
+  feelsLike: Float!
+  visibility: Float!
+  pressure: Float!
+  humidity: Float!
+  windSpeed: Float!
+}
+
+type Coordinates {
+  lat: Float!
+  lon: Float!
+}
+
+type Query {
+  weather(city: String!): WeatherOutput!
+}
